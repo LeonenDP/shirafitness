@@ -6,8 +6,8 @@
     }
 
 
-    &--pink {
-        background-color: $mainPink;
-        color: $lightGrey;
+    &--grey {
+        background-color: $lightGrey;
+        color: $mainPink;
     }
 }
