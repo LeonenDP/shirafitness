@@ -2,12 +2,32 @@
 
     padding: 1.2rem;
     @mixin atMedium {
-        padding: 4.5rem 0;
+        padding: 3.5rem 0;
     }
 
 
     &--grey {
         background-color: $lightGrey;
         color: $mainPink;
+    }
+
+    &--testimonials {
+        background-color: $lightPink;
+    }
+
+    &--no-b-padding-until-medium {
+        padding-bottom: 0;
+
+        @mixin atMedium {
+            padding-bottom: 3.5rem;
+        }
+    }
+
+
+    &--no-b-padding-until-large {
+        padding-bottom: 0;
+            @mixin atLarge {
+        padding-bottom: 3.5rem;
+        }
     }
 }

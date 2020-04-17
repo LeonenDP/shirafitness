@@ -3,22 +3,25 @@
     font-weight: 300;
     text-align: center;
 
-    #mixin atSmall {
+    @mixin atSmall {
         font-size: 3.75rem;
     }
+
 
     strong {
         font-weight: 500;
     }
     &__icon {
         display: block;
-        width: 64px;
-        height: 64px;
+        width: 80px;
+        height: 80px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: .6rem;
 
         @mixin atSmall {
+            position: relative;
+            top: 12px;
             margin-right: .5rem;
             margin-left: 0;
             margin-bottom: 0;
